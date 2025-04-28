@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+  
+
+<!-- Navigation Bar -->
+<nav>
+  <div class="container nav-container">
+    <h2>My Portfolio</h2>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="darkModeToggle">🌙</button></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>Welcome to My Portfolio</h1>
+      <p><span id="typingText"> UI/UX Designer |web developer | Designer || Researcher | Hard Worker</span></p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="container" data-aos="fade-up">
+
+    <h2>About Me</h2>
+    <img src="images/me.jpeg" alt="My Photo" class="profile-pic">
+    <p>Hello! I'm a passionate  Hard Worker, UI/UX designer,web developer ,Designer , Researcher  with a preference for building beautiful, functional websites.Motivated and detail-oriented Software Engineering undergraduate with a strong foundation in fullstack development, cloud computing, and database management. Passionate about designing
+      scalable and efficient software solutions. Adept at collaborating in agile environments and utilizing
+      modern technologies to drive innovative development. Seeking a challenging role to apply technical
+      expertise and problem-solving skills in the tech industry.
+      .</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container" data-aos="fade-right">
+
+    <h2>My Projects</h2>
+    <div class="project" data-aos="fade-right">
+      <div class="parallax-img" style="background-image: url('images/project1.png');"></div>
+      <h3>Sri Lanka postal parcel pick up and delivery system</h3>
+
+      <p>Post department ,Sri Lanka
+        Business analyst, UI designer, developer
+        StartDate : 2025-02-11 End Date : 2025-12-17<br>
+        Parcel Delivery System with Real-Time Tracking (React & Firebase) <br>• Developing a scalable real-time
+        parcel tracking system for the Sri Lanka Post Department<br> • Designed an intuitive UI and integrated
+        automated notifications<br> • Impact: Improved delivery efficiency by 30% through route optimization.</p><br>
+
+        <div class="project" data-aos="fade-right">
+          <div class="parallax-img" style="background-image: url('images/project1.png');"></div>
+        <h3>Mobile app for tuition class management</h3>
+
+        <p>Business analyst ,Ui designer, developer
+          StartDate : 2025-02-14<br>
+          Mobile App for Tuition Class Management (Flutter & Firebase)<br> • Developing a cross-platform mobile
+          app for managing tuition centers <br>• Integrated student-teacher communication, attendance tracking,
+          and cloud-based storage <br>• Impact: Reduced administrative workload by 40% via automated class </p><br>
+
+          <div class="project" data-aos="fade-right">
+            <div class="parallax-img" style="background-image: url('images/project1.png');"></div>
+          <h3>Full Wedding Planning Web Application</h3>
+
+          <p>Business analyst, UI designer, backend developer
+            StartDate : 2025-03-26<br>
+            Full Wedding Planning Web Application (PHP, MySQL, JavaScript)<br> • Creating an end-to-end event
+            management system for wedding coordination <br>• Implemented budget tracking, vendor booking, and
+            guest list management features</p>
+    </div>
+    
+  </section>
+
+  <!-- Video Section -->
+  <section id="videos" class="container" data-aos="zoom-in">
+
+    <h2>Demo Video</h2>
+    <video controls>
+      <source src="videos/demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name">
+      <input type="email" id="email" placeholder="Your Email">
+      <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    
+    <div id="popup" class="popup">
+      <div class="popup-content" id="popup-message"></div>
+    </div>
+    
+  </section>
+
+  
+
+  <script src="script.js"></script>
+  <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<button id="scrollTopBtn" title="Go to top">↑</button>
+<section id="testimonials" class="container" data-aos="fade-up">
+  <h2>What People Say</h2>
+  <div class="testimonial-carousel">
+    <div class="testimonial active">
+      <p>"Amazing work! Highly recommended."</p>
+      <h4>- Alex Doe</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Professional, creative, and reliable."</p>
+      <h4>- Jamie Smith</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Delivered beyond expectations!"</p>
+      <h4>- Riley Johnson</h4>
+    </div>
+  </div>
+</section>
+<section id="gallery" class="container" data-aos="zoom-in">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <img src="images/photo1.jpg" alt="Gallery Image 1">
+    <img src="images/photo2.jpg" alt="Gallery Image 2">
+    <img src="images/photo3.jpg" alt="Gallery Image 3">
+    <img src="images/photo4.jpg" alt="Gallery Image 4">
+  </div>
+</section>
+
+<!-- Lightbox Preview -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 My Portfolio. All rights reserved.</p>
+</footer>
+</body>
+</html>
+
